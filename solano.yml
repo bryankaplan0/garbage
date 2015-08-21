@@ -1,0 +1,5 @@
+---
+test_pattern:
+  - test.sh
+hooks:
+  post_build: 'script/solano/post_build.sh'
