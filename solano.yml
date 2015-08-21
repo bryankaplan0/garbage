@@ -1,5 +1,6 @@
+# solano.yml
 ---
-test_pattern:
-  - test.sh
+tests:
+  - test $(( $RANDOM * 10 / $(( 2 ** 15 )) )) -ge 5
 hooks:
   post_build: 'script/solano/post_build.sh'
